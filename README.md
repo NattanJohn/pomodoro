@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
+<h1 align="center">⏱️ Pomodoro App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">Uma aplicação moderna baseada na <strong>Técnica Pomodoro</strong>, desenvolvida com React, TypeScript, Web Workers e Hooks.</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🍅 O que é a Técnica Pomodoro?
 
-## Expanding the ESLint configuration
+A Técnica Pomodoro é um método de gerenciamento de tempo que propõe dividir o trabalho em blocos de tempo chamados de **pomodoros** (geralmente 25 minutos), separados por intervalos curtos de descanso. Após quatro ciclos, um descanso mais longo é realizado.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Essa abordagem ajuda a manter o foco, evitar distrações e melhorar a produtividade.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Sobre o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto é um **cronômetro Pomodoro interativo** com diversas funcionalidades para personalização da experiência do usuário.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Você pode:
+
+- ✅ Iniciar, ou resetar o cronômetro.
+- 🧠 Configurar o tempo de foco, descanso curto e descanso longo.
+- 🌓 Alternar entre o tema claro e escuro.
+- 🔊 Receber alertas sonoros ao final de cada ciclo.
+- 📊 Visualizar o **histórico de ciclos** concluídos.
+- ⚡ Performance otimizada com uso de **Web Workers** para evitar travamentos na UI.
+- 🧩 Desenvolvido com **React + TypeScript** e uso de **Hooks** modernos.
+
+---
+
+## 🖼️ Interface
+
+### 🔆 Tema Claro  
+<a href="https://imgur.com/rgZnD43" target="_blank">
+  <img src="https://i.imgur.com/rgZnD43.png" title="Tema Claro" />
+</a>
+
+### 🌙 Tema Escuro  
+<a href="https://imgur.com/H3TGXD8" target="_blank">
+  <img src="https://i.imgur.com/H3TGXD8.png" title="Tema Escuro" />
+</a>
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- ⚛️ React
+- 🟦 TypeScript
+- 🧠 React Hooks
+- ⛓️ React Context API
+- 🧵 Web Workers
+- 🛠️ Vite
+- 📦 Vercel (deploy)
+
+---
+
+## 🔧 Funcionalidades
+
+- [x] Timer com contagem regressiva
+- [x] Customização dos tempos de foco
+- [x] Tema escuro e claro
+- [x] Alerta sonoro ao fim do tempo
+- [x] Histórico de sessões
+- [x] Design responsivo
+
+---
+
+## 🚀 Teste Agora!
+
+Você pode acessar o projeto em produção clicando no link abaixo:
+
+🔗 <a href="https://pomodoro-iota-sandy.vercel.app/" target="_blank">https://pomodoro-iota-sandy.vercel.app/</a>
+
+---
+
+## 🧠 Autor
+
+Desenvolvido com 💻 e ☕ por **Nattan John**
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
